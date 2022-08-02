@@ -6,7 +6,6 @@ import Card from "./components/cards/card";
 export default function App() {
   const [values, setValues] = useState();
   const [listCard, setListCard] = useState([]);
-  console.log(listCard);
   const handleRegisterGame = () => {
     Axios.post("http://localhost:3001/register", {
       name: values.name,
@@ -21,7 +20,7 @@ export default function App() {
         setListCard([
           ...listCard,
           {
-            id: response.data[0].id,
+            idgames: response.data[0].idgames,
             name: values.name,
             cost: values.cost,
             category: values.category,
@@ -80,8 +79,8 @@ export default function App() {
         <Card
           listCard={listCard}
           setListCard={setListCard}
-          key={val.id}
-          id={val.id}
+          key={val.idgames}
+          idgames={val.idgames}
           name={val.name}
           cost={val.cost}
           category={val.category}
