@@ -3,13 +3,13 @@
   padding: 0;
 }
 
-.app--container {
+.app-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.register--container {
+.register-container {
   padding: 10px 20px;
   width: max-content;
   height: max-content;
@@ -19,18 +19,18 @@
   border-radius: 5px;
 }
 
-.register--title {
+.register-title {
   text-align: center;
   margin-bottom: 20px;
   font-family: fantasy;
 }
 
-.register--input {
+.register-input {
   display: block;
   margin: 10px auto;
   padding: 7px 0;
 }
 
-.register--button {
+.register-button {
   padding: 2px 5px;
 }
